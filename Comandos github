@@ -1,0 +1,18 @@
+Usando git
+
+git init                                                           %iniciar novo projeto com git
+git add .                                                          %prepara as alterações para commit
+git commit -m "comentario_do_commit. Por exemplo: primeiro commit" %commit os arquivos no historico
+git status                                                         %mostra o estatus das alterações atuais
+git log                                                            %mostra o log de alterações dos ultimos commit
+git diff                                                           %mostra o que foi alterado. O que tem de alteração na ramificação
+git add nome_do_arquivo.html
+git checkout -b nome_da_segunda_branch                             %pega todas as alterações que tenho nesta branch atual e crio uma nova branch "nome_da_segunda_branch" com estas alteraçoes 
+git branch                                                         %mostra o nome da branch em que estou
+git branch -b nome_da_segunda_branch                               %cria uma nova branch a partir da branch atual que estamos
+git checkout master                                                %sem o -b, ele apenas vai para outra branch já existente.
+git merge nome_da_segunda_branch                                   %as alterações desta segunda branch junta com a main (comit em que estou).
+git remote add <nome> <url>                                        %add um novo repositorio remoto
+git push <nome> <nome-da-branch>                                   %manda nossas alterações locais para o repositorio remoto, para cada branch
+git pull                                                           %pega as alterações do repositorio remoto e joga para nossa maquina
+git fetch                                                          %atualiza o nosso histórico local de acordo com o histórico salvo la no repositorio remoto. Sincronização do local com o remoto.
